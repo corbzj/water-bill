@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:40px 20px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #bde6ff,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #f5fafd,
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #f5fafd,
+            #e3f0f8,
+            #cfe9f5,
+            #c0daf0
+        );
+
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+        repeating-radial-gradient(
+            circle at 0 0,
+            rgba(0,0,0,.4) 0,
+            rgba(0,0,0,.4) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    opacity:.04;
+    pointer-events:none;
+}
+
+.container{
+    max-width:850px;
+    margin:auto;
+
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+
+    border-radius:28px;
+    padding:35px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.08);
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    color:#18233d;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#6b7280;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:#f3f6f8;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    outline:2px solid #2263b8;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin: 10px;
+
+    background:#2a71ce;
+    color:white;
+
+    border:none;
+    border-radius:16px;
+
+    cursor:pointer;
+    font-weight:600;
+    font-size:15px;
+
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d57a3;
+}
+
+.counter{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+    color:#18233d;
+}
+
+.statement{
+    margin-top:25px;
+    background:#f3f6f8;
+    border-radius:18px;
+    padding:20px;
+    line-height:1.8;
+}
+
+.history{
+    margin-top:25px;
+}
+
+.history h2{
+    margin-bottom:15px;
+    color:#18233d;
+}
+
+.history ul{
+    list-style:none;
+}
+
+.history li{
+    background:#f3f6f8;
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:10px;
+}
